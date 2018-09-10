@@ -62,7 +62,7 @@ public class LRU<K, V> implements Iterable<K> {
 
         if (map.size() > maxSize) {
             Node toRemove = removeTail();
-            map.remove(toRemove);
+            map.remove(toRemove.k);
         }
     }
 
@@ -77,6 +77,7 @@ public class LRU<K, V> implements Iterable<K> {
 
     private void appendHead(Node node) {
         node.next = head.next;
+        node.next.pre = node;
         node.pre = head;
         head.next = node;
     }
@@ -85,6 +86,7 @@ public class LRU<K, V> implements Iterable<K> {
     private Node removeTail() {
         Node node = tail.pre;
         tail.pre = node.pre;
+        node.pre.next = tail;
         return node;
     }
 
