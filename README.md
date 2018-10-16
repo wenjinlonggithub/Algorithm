@@ -27,9 +27,6 @@
 | ---- Hanoi                         // 汉诺塔
 | ---- Huffman                       // 哈夫曼编码
 | Queue                              // 队列
-| Scheduling
-| ---- FCFS                          // 先来先服务调度算法
-| ---- SJF                           // 最短进程优先调度算法
 | Searching
 | ---- OrderedST
 | -------- BinarySearchOrderedST     // 二分查找实现的有序符号表
