@@ -2,7 +2,7 @@
     <h1>
     	Algorithm
 	</h1>
-    <img src="pics/LogoMakr_3SXxzw.png" width="200px">
+    <img src="pics/LogoMakr_3SXxzw.png" width="150px">
 </div>
 
 ## About
